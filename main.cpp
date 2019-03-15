@@ -369,7 +369,7 @@ istream& Matrice_oarecare::citire(istream& in)//citeste o matrice oarecare
         }
     cout<<"Nr linii si coloane:"<<endl;
     in>>this->lin>>this->col;
-    cout<<endl;
+    cout<<endl<<"Introduceti de la tastatura numerele complexe din matrice ( partea reala , enter,partea imaginara)"<<endl;
 
     v=new NrComplex*[this->lin];
     for(int i=0;i<this->lin;i++)//aloca memorie
@@ -459,7 +459,7 @@ istream& Matrice_patratica::citire(istream& in)//citeste o matrice patratica
         }
     cout<<"Dimensiune:"<<endl;
     in>>this->dim;
-    cout<<endl;
+    cout<<endl<<"Introduceti de la tastatura numerele complexe din matrice ( partea reala , enter,partea imaginara)"<<endl;
 
     v=new NrComplex*[this->dim];
     for(int i=0;i<this->dim;i++)
@@ -621,7 +621,7 @@ istream& Matrice_triunghiulara::citire(istream& in)//citeste o matrice triunghiu
 
     cout<<"Nr linii:"<<endl;
     in>>this->lin;
-    cout<<endl;
+    cout<<endl<<"Introduceti de la tastatura numerele complexe din matrice ( partea reala , enter,partea imaginara)"<<endl;
 
     v=new NrComplex*[this->lin];
     for(int i=0;i<this->lin;i++)//aloca memorie
